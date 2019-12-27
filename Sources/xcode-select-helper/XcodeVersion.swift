@@ -1,4 +1,5 @@
 import Foundation
+import Version
 
 public struct XcodeVersion: Decodable, Comparable {
     
@@ -10,7 +11,7 @@ public struct XcodeVersion: Decodable, Comparable {
         }
     }
     
-    public let semanticVersion: SemanticVersion
+    public let semanticVersion: Version
     public let build: String
     public let isBeta: Bool
     
